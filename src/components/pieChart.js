@@ -11,8 +11,8 @@ const PieChart = () => {
       {
         label: "Sales Distribution",
         data: [55, 25, 20],
-        backgroundColor: ["#48CFCB", "#229799", "#424242"],
-        borderColor: "#F5F5F5",
+        backgroundColor: ["#a16207", "#2563eb", "#500724"],
+        borderColor: "#000",
         borderWidth: 1,
       },
     ],
@@ -25,10 +25,10 @@ const PieChart = () => {
         display: true,
         position: "top",
         labels: {
-          // color: '#fff',
+          color: '#fff',
         },
         dataset: {
-          color:"#000"
+          color:"#fff"
         }
       },
       title: {
