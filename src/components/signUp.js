@@ -55,7 +55,7 @@ const Signup = ({ handleSwitch }) => {
         />
         <button
           type="submit"
-          className="w-full py-2 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-500 transition-all shadow-lg transform hover:translate-y-1"
+          className="w-full py-2 bg-[#a16207] text-white font-bold rounded-lg hover:bg-indigo-500 transition-all shadow-lg transform hover:translate-y-1"
         >
           Sign up
         </button>

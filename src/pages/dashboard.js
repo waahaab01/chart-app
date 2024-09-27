@@ -5,18 +5,20 @@ import PieChart from "../components/pieChart";
 
 const Dashboard = () => {
   return (
-    <div className="container mx-auto px-4 py-10 w-full bg-gray-300 text-[#424242]">
-      <h1 className="text-3xl font-bold mb-6 text-center">Dashboard</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 justify-items-center">
-        <div className="chart-container bg-gray p-6 shadow-lg rounded-lg hover:shadow-xl transition-all transform hover:scale-105 w-96">
-          <PieChart />
-        </div>
-        <div className="chart-container bg-gray p-6 shadow-lg rounded-lg hover:shadow-xl transition-all transform hover:scale-105 w-96">
+    <div className="container mx-auto px-4 py-10 text-[#fff] bg-[#18181b] min-h-screen">
+      {/* First row: LineChart and PieChart */}
+      <div className="flex flex-col lg:flex-row lg:justify-between gap-6 lg:h-96 h-auto">
+        <div className="flex-1 lg:w-80 md:w-3/4 chart-container bg-[#000] p-6 shadow-lg rounded-lg hover:shadow-xl transition-all transform hover:scale-105">
           <LineChart />
         </div>
+        <div className="flex-1 lg:w-20 md:w-3/4 chart-container bg-black p-6 shadow-lg rounded-lg hover:shadow-xl transition-all transform hover:scale-105">
+          <PieChart />
+        </div>
       </div>
-      <div className="grid grid-cols-1 mt-6 justify-items-center">
-        <div className="chart-container bg-gray p-6 shadow-lg rounded-lg hover:shadow-xl transition-all transform hover:scale-105">
+
+      {/* Second row: BarChart */}
+      <div className="sm:w-2/3 md:w-3/4 mt-6">
+        <div className="flex-1  chart-container bg-black p-6 shadow-lg rounded-lg hover:shadow-xl transition-all transform hover:scale-105">
           <BarChart />
         </div>
       </div>

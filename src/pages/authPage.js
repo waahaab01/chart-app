@@ -10,7 +10,7 @@ const AuthPage = () => {
   };
 
   return (
-    <div className="h-screen flex items-center justify-center bg-gradient-to-r from-black to-indigo-900">
+    <div className="h-screen flex items-center justify-center bg-black">
       {isLogin ? (
         <Login handleSwitch={handleSwitch} />
       ) : (

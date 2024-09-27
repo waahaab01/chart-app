@@ -1,6 +1,8 @@
 import { FaFacebookF, FaGoogle, FaLinkedinIn } from "react-icons/fa";
+import { useNavigate } from "react-router-dom";
 
 const Login = ({ handleSwitch }) => {
+  const Navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     const email = e.target.email.value;
@@ -11,8 +13,8 @@ const Login = ({ handleSwitch }) => {
 
     // Simple authentication check
     if (storedUser && storedUser.email === email && storedUser.password === password) {
-      alert("Login successful!");
-      localStorage.setItem("isLoggedIn", "true"); // Save login state
+            localStorage.setItem("isLoggedIn", "true");
+      Navigate('/') // Save login state
     } else {
       alert("Invalid credentials!");
     }
@@ -48,13 +50,13 @@ const Login = ({ handleSwitch }) => {
         />
         <button
           type="submit"
-          className="w-full py-2 bg-indigo-600 text-white font-bold rounded-lg hover:bg-indigo-500 transition-all shadow-lg transform hover:translate-y-1"
+          className="w-full py-2 bg-[#a16207] text-white font-bold rounded-lg hover:bg-indigo-500 transition-all shadow-lg transform hover:translate-y-1"
         >
           Sign in
         </button>
         <p className="text-center mt-4 text-gray-600">
           Forgot your password?{" "}
-          <a href="#" className="text-indigo-600">
+          <a href="#" className="text-[#a16207]">
             Click here
           </a>
         </p>
@@ -63,7 +65,7 @@ const Login = ({ handleSwitch }) => {
         Don't have an account?{" "}
         <button
           onClick={handleSwitch}
-          className="text-indigo-600 font-bold hover:underline"
+          className="text-[#a16207] font-bold hover:underline"
         >
           Sign up
         </button>

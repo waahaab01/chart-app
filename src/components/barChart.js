@@ -11,8 +11,8 @@ const BarChart = () => {
       {
         label: "Monthly Sales",
         data: [300, 400, 350, 500, 600, 700],
-        backgroundColor: "#48CFCB",
-        borderColor: "#229799",
+        backgroundColor: "#a16207",
+        borderColor: "#000",
         borderWidth: 2,
       },
     ],
@@ -25,7 +25,7 @@ const BarChart = () => {
         display: true,
         position: "top",
         labels: {
-          // color: '#fff',
+          color: '#fff',
         },
       },
       title: {
